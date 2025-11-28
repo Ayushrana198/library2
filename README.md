@@ -56,4 +56,4 @@ A full-stack library management application built with Flask, Vue.js, and SQLite
 
 **Author**: Ayush Singh Rana (21F1005671)[1]
 
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/50109167/8ab52b8e-a6c6-4350-96cc-8d9a9a2d27f0/project_report.pdf)
+
