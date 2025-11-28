@@ -54,6 +54,6 @@ A full-stack library management application built with Flask, Vue.js, and SQLite
 - **Request**: reqid, bookid, userid, request/expiry dates
 - **Feedback**: feedid, userid, bookid, feedback
 
-**Author**: Ayush Singh Rana (21F1005671)[1]
+**Author**: Ayush Singh Rana
 
 
