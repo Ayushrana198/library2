@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.0.0/dist/vue-router.js"></script>
+    <title>Library Management</title>
+    <style>
+        body {
+            background-image: url('./static/images/library.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; 
+            color: black; 
+        }
+
+        
+        .nav-link {
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            color: white;
+            background-color: rgb(81, 203, 81);
+            border-color: rgb(81, 203, 81);
+        }
+
+        .btn-primary:hover {
+            color: white;
+            background-color: rgb(81, 203, 81);
+            border-color: rgb(81, 203, 81);
+        }
+
+        .btn-primary:focus {
+            box-shadow: none;
+        }
+
+        .red-button {
+            background-color: red;
+            border-color: red;
+        }
+
+        .red-button:hover {
+            background-color: red;
+            border-color: red;
+        }
+
+        .red-button:focus {
+            box-shadow: none;
+        }
+
+        
+        .library-title {
+            color: red; 
+            margin-top: 30px; 
+        }
+
+        .library-subtitle {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <nav class="nav">
+            
+            <a class="nav-link btn btn-primary red-button "><b>Library Management App</b></a><br><br>
+            <a class="nav-link btn btn-primary"><router-link to="/"><b>Home</b></router-link></a>
+            <a class="nav-link btn btn-primary"><router-link to="/signup"><b>Register</b></router-link></a>
+            <a class="nav-link btn btn-primary"><router-link to="/login"><b>Login</b></router-link></a>
+            <a class="nav-link btn btn-primary" href="/logout"><b>Logout</b></a>
+        </nav>
+        <hr>
+        <div class="row">
+            <div class="column">
+                <router-view></router-view>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}" type="module"></script>
+</body>
+
+</html>

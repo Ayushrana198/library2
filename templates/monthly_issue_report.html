@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Book Requests Report</title>
+</head>
+<body>
+    <h2>Monthly Book Requests Report for {{ user.username }}</h2>
+    {% if requests %}
+        {% for request in requests %}
+            <p><b>Book Title: </b>{{ request.book.title }}</p>
+            <p><b>Author: </b>{{ request.book.author }}</p>
+            <p><b>Price: </b>{{ request.book.price }}</p>
+            <hr>
+        {% endfor %}
+    {% else %}
+        <p>No book requests found for this month</p>
+    {% endif %}
+</body>
+</html>
