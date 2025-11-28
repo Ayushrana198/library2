@@ -1,5 +1,5 @@
-# library2
-Library Management App
+
+#Library Management App
 
 Description
 The project is created based on a library management app. The app using proper login handles
